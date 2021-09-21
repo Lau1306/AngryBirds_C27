@@ -20,7 +20,7 @@ function setup() {
   createCanvas(1200,400);
 
   engine = Engine.create();
-  world = myEngine.world;
+  world = engine.world;
 
   box1 = new Box(700,320,70,70);
   box2 = new Box(920,320,70,70);
@@ -44,7 +44,7 @@ function setup() {
 
 function draw() {
   background(backgroundImg);  
-  Engine.update(myEngine);
+  Engine.update(engine);
 
   ground.display();
 
