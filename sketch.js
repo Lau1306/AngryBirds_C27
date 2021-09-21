@@ -2,7 +2,7 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 
-var myEngine, myWorld;
+var engine, world;
 
 var box1, box2, box3, box4, box5;
 var ground;
@@ -19,8 +19,8 @@ function preload(){
 function setup() {
   createCanvas(1200,400);
 
-  myEngine = Engine.create();
-  myWorld = myEngine.world;
+  engine = Engine.create();
+  world = myEngine.world;
 
   box1 = new Box(700,320,70,70);
   box2 = new Box(920,320,70,70);
